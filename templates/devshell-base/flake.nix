@@ -33,5 +33,5 @@
 
         # Move overlay outside system-specific outputs
       }
-    ))
+    ));
 }
