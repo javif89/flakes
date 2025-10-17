@@ -12,7 +12,7 @@
       nixpkgs,
       flake-utils,
     }:
-    (flake-utils.lib.eachDefaultSystem (
+    flake-utils.lib.eachDefaultSystem (
       system:
       let
         pkgs = import nixpkgs {
@@ -30,8 +30,6 @@
             echo "Devshell started successfully"
           '';
         };
-
-        # Move overlay outside system-specific outputs
       }
-    ));
+    );
 }
