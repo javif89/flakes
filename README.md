@@ -1,0 +1,1 @@
+Nix flake templates for different project types. WIP
