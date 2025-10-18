@@ -25,7 +25,6 @@
             hello
           ];
 
-          # Ensure display environment variables are available
           shellHook = ''
             echo "Devshell started successfully"
           '';

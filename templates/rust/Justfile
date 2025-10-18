@@ -1,0 +1,53 @@
+default:
+    @just -l
+
+run: 
+    cargo run
+
+build:
+	cargo build
+
+build-release:
+	cargo build --release
+
+test: 
+	cargo test --workspace
+
+check: 
+	cargo check --workspace
+
+fmt: 
+	cargo fmt --all
+
+lint:
+	cargo clippy --workspace --all-targets --all-features
+
+lint-fix:
+	cargo clippy --workspace --all-targets --all-features --fix --allow-dirty --allow-staged
+    just fmt
+
+## Update dependencies
+deps:
+	cargo update
+
+## Check for security vulnerabilities
+deps-audit: 
+	cargo audit
+
+# Cleaning
+clean:
+	cargo clean
+
+## Deep clean (including cache)
+clean-all: clean
+	rm -rf target/
+	rm -rf ~/.cargo/registry/cache/
+
+## Run benchmarks
+bench: 
+	cargo bench --workspace
+
+## Profile the application (requires cargo-flamegraph)
+profile: 
+	cargo flamegraph -p waycast-ui
+	brave flamegraph.svg
