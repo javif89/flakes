@@ -24,7 +24,7 @@ lint:
 
 lint-fix:
 	cargo clippy --workspace --all-targets --all-features --fix --allow-dirty --allow-staged
-    just fmt
+	just fmt
 
 ## Update dependencies
 deps:
