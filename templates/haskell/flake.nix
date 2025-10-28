@@ -1,5 +1,5 @@
 {
-  description = "My personal Nix flake templates";
+  description = "DevShell flake for my application";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -22,6 +22,9 @@
       {
         devShells.default = pkgs.mkShell {
           buildInputs = with pkgs; [
+            haskellPackages.ghc
+            haskell-language-server
+            haskellPackages.cabal-install
             just
           ];
 
@@ -30,21 +33,5 @@
           '';
         };
       }
-    )
-    // {
-      templates = {
-        devshell-base = {
-          path = ./templates/devshell-base;
-          description = "A flake with an empty devshell";
-        };
-        rust = {
-          path = ./templates/rust;
-          description = "A base template for any rust project";
-        };
-        haskell = {
-          path = ./templates/haskell;
-          description = "A base template with the haskell toolchain and just";
-        };
-      };
-    };
+    );
 }
