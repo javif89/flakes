@@ -45,6 +45,10 @@
           path = ./templates/haskell;
           description = "A base template with the haskell toolchain and just";
         };
+        zensical = {
+          path = ./templates/zensical;
+          description = "A base template for a documentation site using zensical";
+        };
       };
     };
 }
