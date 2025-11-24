@@ -1,0 +1,15 @@
+[workspace]
+members = []
+resolver = "3"
+
+[workspace.package]
+version = "0.1.0"
+authors = ["Javier Feliz <me@javierfeliz.com>"]
+edition = "2024"
+rust-version = "1.89"
+license = "MIT"
+description = "Workspace template from my flakes"
+# homepage = "https://waycast.dev"
+# repository = "https://github.com/javif89/waycast"
+# categories = ["gui", "os::unix-apis"]
+# keywords = ["launcher", "wayland", "gtk4", "application-launcher", "desktop"]

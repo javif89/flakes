@@ -41,6 +41,10 @@
           path = ./templates/rust;
           description = "A base template for any rust project";
         };
+        cargo-workspace = {
+          path = ./templates/cargo-workspace;
+          description = "A base template for a new cargo workspace project";
+        };
         haskell = {
           path = ./templates/haskell;
           description = "A base template with the haskell toolchain and just";
