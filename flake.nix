@@ -53,6 +53,10 @@
           path = ./templates/zensical;
           description = "A base template for a documentation site using zensical";
         };
+        nuxt-starter = {
+          path = ./templates/nuxt-starter;
+          description = "Nuxt app starter with auth set up";
+        };
       };
     };
 }
