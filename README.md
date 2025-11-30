@@ -9,6 +9,7 @@ Included so far:
 - `cargo-workspace`: New workspace for a rust project
 - `haskell`: Basic haskell project 
 - `zensical`: New documentation site using the zensical static site generator.
+- `nuxt-started`: Nuxt app starter kit with auth and db set up
 
 ## Usage
 
