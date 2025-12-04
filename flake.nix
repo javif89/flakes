@@ -57,6 +57,10 @@
           path = ./templates/nuxt-starter;
           description = "Nuxt app starter with auth set up";
         };
+        php = {
+          path = ./templates/php;
+          description = "Basic php flake";
+        };
       };
     };
 }
