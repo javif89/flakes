@@ -1,0 +1,8 @@
+run:
+    glance --config ./site/glance.yml
+
+ansible_path := ""
+toansible:
+    mkdir -p {{ansible_path}}
+    cp -r ./assets {{ansible_path}}
+    cp -r ./site {{ansible_path}}

@@ -61,6 +61,10 @@
           path = ./templates/php;
           description = "Basic php flake";
         };
+        glance = {
+          path = ./templates/glance;
+          description = "Template for a new glance site";
+        };
       };
     };
 }

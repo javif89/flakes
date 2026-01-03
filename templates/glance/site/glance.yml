@@ -1,0 +1,9 @@
+server:
+  assets-path: ./assets
+  proxied: true
+branding:
+  hide-footer: true
+  logo-text: "Glance Site"
+  logo-url: /assets/logo.png
+pages:
+  - $include: home.yml

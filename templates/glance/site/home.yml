@@ -1,0 +1,10 @@
+- name: Home
+  columns:
+    - size: full
+      widgets:
+      - type: split-column
+        widgets:
+          - type: hacker-news
+            collapse-after: 5
+          - type: lobsters
+            collapse-after: 5
