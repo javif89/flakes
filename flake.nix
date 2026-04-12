@@ -65,6 +65,10 @@
           path = ./templates/glance;
           description = "Template for a new glance site";
         };
+        devenv = {
+          path = ./templates/devenv;
+          description = "New devenv project with vscode config to ignore .devenv and .direnv";
+        };
       };
     };
 }
